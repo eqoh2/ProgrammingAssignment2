@@ -1,4 +1,4 @@
-## The following functions enables you to save the inverse for a matrix
+## The following functions enable you to save the inverse for a matrix
 ## Create the special object by calling makeCacheMatrix and save the inverse by calling cacheSolve
 
 ## makeCacheMatrix creates the object that contains the matrix and its inverse
@@ -19,7 +19,7 @@ makeCacheMatrix <- function(x = matrix()) {
 
 ## cacheSolve returns the inverse of the matrix x
 ## The argument for calling this function is the object returned by makeCacheMatrix
-## If the inverse has already been calculated or there was no change to the matrix, it will be read from the cache
+## If the inverse has already been calculated and there was no change to the matrix, it will be read from the cache
 cacheSolve <- function(x, ...) {
     m <- x$getInverse()
     if(!is.null(m)) {
