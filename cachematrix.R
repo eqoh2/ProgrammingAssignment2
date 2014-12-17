@@ -1,5 +1,5 @@
-## The following functions enable you to save the inverse for a matrix
-## Create the special object by calling makeCacheMatrix and save the inverse by calling cacheSolve
+## The following functions enable you to save the inverse of a matrix
+## Create the object for caching by calling makeCacheMatrix and get the inverse by calling cacheSolve
 
 ## makeCacheMatrix creates the object that contains the matrix and its inverse
 makeCacheMatrix <- function(x = matrix()) {
