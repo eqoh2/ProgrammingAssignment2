@@ -1,4 +1,4 @@
-## The following functions enable you to save the inverse for a matrix
+## The following functions enables you to save the inverse for a matrix
 ## Create the special object by calling makeCacheMatrix and save the inverse by calling cacheSolve
 
 ## makeCacheMatrix creates the object that contains the matrix and its inverse
