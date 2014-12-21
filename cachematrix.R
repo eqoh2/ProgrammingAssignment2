@@ -22,10 +22,12 @@ makeCacheMatrix <- function(x = matrix()) {
 ## If the inverse has already been calculated and there was no change to the matrix, the inverse will be read from the cache
 cacheSolve <- function(x, ...) {
     matInverse <- x$getInverse()
+    #Check if the inverse of the matrix was already set
     if(!is.null(matInverse)) {
         message("getting cached data")
         return(matInverse)
     }
+    #if the inverse was not set, then calculate the inverse and write it to the cache
     data <- x$get()
     matInverse <- solve(data, ...)
     x$setInverse(matInverse)
